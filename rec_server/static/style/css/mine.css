@@ -1,0 +1,222 @@
+html { overflow-y: scroll; }
+
+.container1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 80px;
+    *zoom: 1;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+.col-lg-6 {
+    width: 100%;
+}
+
+
+.col-lg-5 {
+    width: 100%;
+}
+
+.container2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-top: 80px;
+    *zoom: 1;
+}
+
+
+.result {
+    min-height: 100px;
+    margin-top: 20px;
+}
+
+.well {
+    min-height: 80px;
+}
+
+.buttongroup {
+    margin-top: 20px;
+}
+
+.navbar {
+    background: #000;
+    color: #fff;
+    opacity: .8;
+}
+
+h1 {
+    text-shadow: 5px 5px 5px #333;
+}
+
+.input {
+    width: 550px;
+}
+
+.qiyu {
+    width: 35px;
+    font-size: 14px;
+    background-color: #3a87ad;
+}
+
+.qiso {
+    width: 35px;
+    font-size: 14px;
+    background-color: #f89406;
+}
+
+.label-recid{
+    text-align: left !important;
+    padding-right: 0px;
+}
+
+.feature{
+    float: left;
+    height:25px;
+    padding: 0px 15px 0px 15px;
+    margin: 0px 5px 13px 0px;
+    cursor: pointer;
+    line-height: 25px;
+}
+
+
+.feature-placeholder{
+    float: left;
+    height:25px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 5px 10px 0px;
+    line-height: 25px;
+    border:1px solid;
+    border-style:dotted;
+
+    /* older safari/Chrome browsers */  
+    -webkit-opacity: 0.5;  
+    /* Netscape and Older than Firefox 0.9 */  
+    -moz-opacity: 0.5;  
+    /* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/  
+    -khtml-opacity: 0.5;  
+    /* IE9 + etc...modern browsers */  
+    opacity: .5;  
+    /* IE 4-9 */  
+    filter:alpha(opacity=50);  
+    /*This works in IE 8 & 9 too*/  
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";  
+    /*IE4-IE9*/  
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50); 
+}
+
+
+.feature:hover {
+    background-color: #468847;
+}
+
+.sortable-list {
+    padding-left: 10px;
+    min-height:25px;
+    height: auto;
+    display:block;
+    overflow:hidden;
+}
+
+.feature-well{
+    min-height: 103px;
+    margin-bottom: 20px;
+    padding-top: 32px;
+}
+
+li {
+    list-style-type:none;
+}
+
+.span10{
+    float: left;
+    width: 43%;
+}
+
+.span2{
+    width: 30%;
+    float: left;
+    padding-top: 80px;
+}
+
+.span3{
+    width: 25%;
+    float: left;
+    padding-top: 80px;
+    margin-left: 6px;
+}
+
+
+.channel-ul {
+    margin: 30px 20px 0px 20px;
+}
+
+.label-channel {
+    padding-left: 35px;
+    width: 100%;
+}
+
+.label-statistics {
+    padding-left: 10px;
+    width: 100%;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.channel-li {
+    display: block;
+    float: left !important;
+    width: 25%;
+}
+
+.info {
+    margin-top: 25px;
+    height: 150px;
+}
+
+.tips {
+    margin-bottom: 10px;
+}
+
+.alert-info {
+    height: 150px;
+    margin: 0px 20px 0px 20px;
+}
+
+.statistics {
+    padding-top: 10px;
+}
+
+.statistics-num {
+    margin: 0px 5px 0px 4px;
+    font-weight: bold;
+}
+
+.modals {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .5 ) 
+    url('/static/style/css/images/loading.gif') 
+    50% 50% 
+    no-repeat;
+}
+
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+ *    modal element will be visible */
+body.loading .modals {
+    display: block;
+}
+

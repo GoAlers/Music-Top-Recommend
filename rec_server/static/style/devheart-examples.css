@@ -1,0 +1,122 @@
+ /*
+	Stylesheet for examples by DevHeart.
+	http://devheart.org/
+ */
+
+/*
+	Reset (for cross-browser friendlyness)
+------------------------------------------------------------------- */
+
+html,.dhe-body,.dhe-div,.dhe-span,.dhe-object,.dhe-iframe,.dhe-h1,.dhe-h2,.dhe-h3,.dhe-h4,.dhe-p,.dhe-blockquote,.dhe-pre,.dhe-a,.dhe-code,.dhe-em,.dhe-img,.dhe-ol,.dhe-ul,.dhe-li,.dhe-fieldset,.dhe-form,.dhe-label,.dhe-legend,.dhe-textarea,.dhe-input,.dhe-select {border:0;font-family:inherit;font-size:100%;font-style:inherit;font-weight:inherit;margin:0;padding:0;vertical-align:baseline}.dhe-a
+.dhe-img{border:none}.dhe-a,.dhe-a:focus,dhe-a:hover,dhe-a:active,dhe-a:visited{outline:none}
+
+
+/*
+	General
+------------------------------------------------------------------- */
+
+.dhe-body {
+	font: normal 75% sans-serif;
+	line-height: 1.5;
+	padding: 32px 0;
+}
+
+
+/*
+	Typography
+------------------------------------------------------------------- */
+
+/* Headings */
+
+.dhe-h1, .dhe-h2, .dhe-h3 {
+	color: #404244;
+	line-height: 1;
+	margin-bottom: 0.25em;
+}
+.dhe-h1 {font-size: 2.2em;}
+.dhe-h2 {font-size: 1.6em;}
+.dhe-h3 {font-size: 1.4em;}
+.dhe-h1, .dhe-h3 {font-weight: bold;}
+
+
+/* Paragraphs */
+.dhe-p {margin-bottom: 1em;}
+
+
+/* Links */
+.dhe-link {
+	color: #248;
+	cursor: pointer;
+	text-decoration: underline;
+}
+.dhe-link:hover {color: #D52;}
+
+/* Misc classes */
+
+.dhe-small {font-size: 0.8em;}
+.dhe-large {font-size: 1.2em;}
+
+.dhe-hidden {display: none;}
+
+.dhe-quiet {color: #777;}
+.dhe-loud {color: #000;}
+.dhe-highlight {background-color: #FFA;}
+
+.dhe-text-left {text-align: left;}
+.dhe-text-right {text-align: right;}
+.dhe-text-center {text-align: center;}
+.dhe-text-separator {padding: 0 5px;}
+
+
+/*
+	Alignment
+------------------------------------------------------------------- */
+
+/* Floats */
+
+.dhe-left {float: left;}
+.dhe-right {float: right;}
+
+
+/* Clearers */
+
+.dhe-clear,.dhe-clearer {clear: both;}
+.dhe-clearer {
+	display: block;
+	font-size: 0;
+	line-height: 0;
+}
+
+
+/*
+	Sections and titles
+------------------------------------------------------------------- */
+
+#dhe-step-dropdown-wrapper {width: 320px;}
+#dhe-step-dropdown {
+	background: #FCFCFC;
+	border: 1px inset #AAA;
+	margin: 0;
+	padding: 0;
+}
+
+#dhe-step-navigation {
+	background-color: #F2F6FA;
+	border: 1px solid #E0E4E8;
+	border-color: #E0E4E8 #D6DADF #C6CACF;
+	padding: 8px 10px;
+	font-size: 14px;
+}
+
+#dhe-step-navigation .dhe-text-separator {color: #A2A6AA;}
+
+.dhe-example-section {margin-bottom: 24px; padding-top: 32px;}
+.dhe-example-section-header {margin-bottom: 24px;}
+
+.dhe-example-title {
+	color: #246;
+	border-bottom: 2px solid #68A;
+	padding-bottom: 6px;
+}
+
+.dhe-example-description {color: #444;}
