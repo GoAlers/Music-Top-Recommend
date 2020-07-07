@@ -38,8 +38,15 @@
 2.协同过滤算法（求相似度的II矩阵）--mr.py
 3.批量灌入redis数据库--gen_reclist.py
 
-三、推荐排序LR--rankmodel
+三、推荐排序LR(精排)--rankmodel
 1.求w,b构建模型--lr.py
 2.解析标签获取用户与物品训练数据-- gen_sampes.py
 
 四、推荐流程阶段--main.py
+step1.解析请求userid、itemid.
+step2.加载模型w,b.
+step3.检索redis获得候选集. 
+step4 精排前获取用户特征数据.
+step5：获取物品特征item_feature.data.
+step6:排序
+step7:过滤
