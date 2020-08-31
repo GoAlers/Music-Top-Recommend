@@ -59,7 +59,7 @@
 
 (1)协同过滤算法ALS（求相似度的II矩阵）--mr.py  
 
-总体思路：map阶段：把初始化后的结果进行map排序，为了后续两两取pair对，所以这里我们需要进行map，其实什么也不用操作输出即可
+总体思路：map阶段：把初始化后的结果进行map排序，为了后续两两取pair对，进行map操作输出即可
          reduce阶段：经过map操作后以token，item，score输出，所以排序是token排好的序，求II矩阵，根据相同的token的item进行相似度计算，最后得到cb_train.data
     思路：
         1、统计user，若相同，把相同的user的item和score放入list里面
@@ -75,8 +75,7 @@
 
 
 三、推荐排序LR(精排)
-1.求w,b构建模型--lr.py  
-2.解析标签获取用户与物品训练数据-- gen_sampes.py  
+解析标签获取用户与物品训练数据-- gen_sampes.py  
 
 排序模型rankmodel  
 思路：为逻辑回归准备样本数据
@@ -89,7 +88,7 @@
 模型加载 --lr.py
 思路：这里我们要用到我们的数据，就需要我们自己写load_data的部分，
       首先定义main方法入口，编写load_data
-      其次调用该方法的到x训练x测试，y训练，y测试，使用L1正则化或是L2正则化使得到结果更加可靠
+      其次调用该方法的到x，y训练和测试集，
       最后输出wegiht，和b偏置
 
 
