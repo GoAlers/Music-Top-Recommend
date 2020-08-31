@@ -1,7 +1,7 @@
 # music-top-recommend 
 推荐系统思路：  
-1、数据预处理（用户画像数据、物品元数据、用户行为数据） 
-2、召回（CB、CF算法）  
+1、数据预处理（用户画像数据、物品元数据、用户行为数据）   
+2、召回（CB、CF算法）    
 3、LR训练模型的数据准备，即用户特征数据，物品特征数据  
 4、模型准备，即通过LR算法训练模型数据得到w，b   
 5、推荐系统流程：  
@@ -59,7 +59,7 @@
 
 (1)协同过滤算法ALS（求相似度的II矩阵）--mr.py     
 
-总体思路：map阶段：把初始化后的结果进行map排序，为了后续两两取pair对，进行map操作输出即可   
+总体思路：map阶段：把初始化后的结果进行map排序，为了后续两两取pair对，进行map操作输出即可     
          reduce阶段：经过map操作后以token，item，score输出，所以排序是token排好的序，求II矩阵，根据相同的token的item进行相似度计算，最后得到cb_train.data   
     思路： 
         1、统计user，若相同，把相同的user的item和score放入list里面   
@@ -67,11 +67,10 @@
 
 (2)批量灌入redis数据库--gen_reclist.py     
 
-思路：将已经通过CB算法得到itemA，itemB，score，格式化数据后将结果按k/v形式批量灌入redis数据库。   
-    以itemA为key与itemA有相似度的itemB，和分数，以value的形式存入内存库   
-        1、创建一个字典，将key放入itemA，value 放入与A对应的不同b和分数   
-        2、循环遍历字典，将key加上前缀CB，value以从大到小的分数进行排序，并且相同的item以“——”分割，item和score间用“：”分割  
-
+思路：将已经通过CB算法得到itemA，itemB，score，格式化数据后将结果按k/v形式批量灌入redis数据库。     
+    以itemA为key与itemA有相似度的itemB，和分数，以value的形式存入内存库     
+        1、创建一个字典，将key放入itemA，value 放入与A对应的不同b和分数     
+        2、循环遍历字典，将key加上前缀CB，value以从大到小的分数进行排序，并且相同的item以“——”分割，item和score间用“：”分割    
 
 
 三、推荐排序LR(精排)   
