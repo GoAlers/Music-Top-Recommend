@@ -1,3 +1,4 @@
+项目详解：https://blog.csdn.net/qq_36816848/article/details/108383078
 # music-top-recommend 
 推荐系统思路：  
 1、数据预处理（用户画像数据、物品元数据、用户行为数据）   
@@ -14,8 +15,7 @@
 （7）top-n过滤  
 （8）数据包装（itemid->name），返回  
 
-CSDN博客：https://blog.csdn.net/qq_36816848/article/details/108383078
-项目描述：
+项目框架描述：
 1.	对三个数据进行预处理，合并用户与物品相关信息，数据字段包含itemid、userid、用户信息(年龄、性别、收入、地区)、物品信息（名字、描述、时长、标签）、用户行为数据(收听时长)等。 
 2.	粗排召回阶段使用CB算法，基于内容进行jieba中文分词，计算itemid对应分词的tfidf分数，整理训练数据；使用mr 协同 
 过滤进行相关性计算，训练得到物品之间对应分数item-item；CF算法则通过协同过滤将UI矩阵转成II矩阵，格式化数据后将结果按k/v形式批量灌入redis数据库。 
