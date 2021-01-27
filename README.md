@@ -1,5 +1,5 @@
+# 音乐推荐系统demo
 项目详解：https://blog.csdn.net/qq_36816848/article/details/108383078
-# music-top-recommend 
 推荐系统思路：  
 1、数据预处理（用户画像数据、物品元数据、用户行为数据）   
 2、召回（CB、CF算法）    
