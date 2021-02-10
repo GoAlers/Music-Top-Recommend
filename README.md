@@ -34,7 +34,7 @@
 00de61c1d635ad964eef2aefa8292000,女,19-25,2000-5000,内蒙古  
 字段：userid, gender, age, salary, location  
 
-物品元数据（music_meta） 
+物品元数据（music_meta）  注：此数据在main分支里
 029900100  徐颢菲《猫的借口》284 国内  
 字段：itemid, name, desc, total_timelen, location, tags  
 
